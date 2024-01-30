@@ -1,0 +1,168 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+.setContent {
+  justify-content: center;
+  gap: 3rem;
+  overflow-x: hidden;
+
+  .singleDestination {
+    height: 100%;
+    display: grid;
+    row-gap: 10px;
+    border-radius: 13px;
+    align-items: center;
+    background: var(--cardBG);
+    box-shadow: 0 2px 4px rgba(140, 140, 141, 0);
+    overflow: hidden;
+    //padding: 1rem;
+    &:hover {
+      background: var(--cardHover);
+      box-shadow: 1px 4px rgba(85, 85, 114, 0.549);
+      transition: 0.3s ease;
+    }
+
+    .imageDiv {
+      height: 180px;
+      width: 100%;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; //какое поведение должен иметь элемент <img> или <video>
+        transition: 2s ease;
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .cardInfo {
+      padding: 1rem;
+      .destTitle {
+        color: var(--blackColor);
+        font-size: 1.25rem;
+      }
+
+      .continent {
+        gap: 0.5rem;
+        .icon {
+          color: var(--textColor);
+          font-size: 18px;
+        }
+
+        .name {
+          color: var(--textColor);
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+      .feel {
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem 0;
+        margin: 1rem 0;
+        border-top: 1.5px solid var(--greyText);
+        border-bottom: 1.5px solid var(--greyText);
+        .grade {
+          color: var(--textColor);
+          max-width: 100px;
+          line-height: 20px;
+
+          small {
+            background: var(--gradientColor);
+            border-radius: 1rem;
+            color: var(--whiteColor);
+            padding: 1px 10px;
+            font-size: 10px;
+          }
+        }
+
+        .price {
+          font-size: 2rem;
+          color: var(--PrimaryColor);
+
+          .maxFeesWarning {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: var(--blackColor);
+            left: 0;
+            top: 0;
+            z-index: 10000000;
+            opacity: 0.7;
+            h3 {
+              padding: 10px 15px;
+              width: 50px;
+              margin: 0;
+              color: rgba(255, 255, 255, 1);
+            }
+            &:active {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .desk {
+        font-size: 14px;
+        color: var(--textColor);
+        font-weight: 500;
+      }
+
+      .btn {
+        gap: 0.5rem;
+        margin: 1rem 0;
+        color: var(--whiteColor);
+        font-weight: 600;
+        justify-content: space-between;
+        .icon {
+          position: relative;
+          font-size: 1.5rem;
+          bottom: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .setContent {
+    grid-template-columns: 1fr 1fr;
+    .singleDestination {
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 841px) {
+  .setContent {
+    grid-template-columns: 1fr 1fr 1fr;
+    .singleDestination {
+      height: auto; //Щоб косі не були
+    }
+  }
+}

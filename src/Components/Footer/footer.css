@@ -1,0 +1,234 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 1rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.footer .videoDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.footer .videoDiv img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer .setContent {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2rem 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  z-index: 110;
+}
+.footer .setContent .contactDiv {
+  margin-top: 30px;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .setContent .contactDiv .footerDiv {
+  width: 100%;
+  color: var(--whiteColor);
+  justify-content: space-between;
+}
+.footer .setContent .contactDiv .footerDiv .last {
+  text-decoration: underline;
+}
+.footer .setContent .contactDiv .contactInput {
+  flex-basis: 80%;
+}
+.footer .setContent .contactDiv .contactInput .text {
+  width: 100%;
+}
+.footer .setContent .contactDiv .contactInput .text small {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--whiteColor);
+}
+.footer .setContent .contactDiv .contactInput .text h2 {
+  color: var(--whiteColor);
+  font-size: 1.8rem;
+}
+.footer .setContent .contactDiv .contactInput .inputDiv {
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer .setContent .contactDiv .contactInput .inputDiv input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border-radius: 3rem;
+  border: 1px solid var(--whiteColor);
+  outline: none;
+  background-color: transparent;
+}
+.footer .setContent .contactDiv .contactInput .inputDiv input::-moz-placeholder {
+  color: var(--whiteColor);
+}
+.footer .setContent .contactDiv .contactInput .inputDiv input::placeholder {
+  color: var(--whiteColor);
+}
+.footer .setContent .contactDiv .contactInput .inputDiv .btn {
+  width: 105%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.footer .setContent .contactDiv .contactInput .inputDiv .btn .icon {
+  position: relative;
+  bottom: 0.3rem;
+  margin: 0.3rem;
+}
+.footer .setContent .footerCard {
+  position: relative;
+  padding: 1rem 1rem 4rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  background: var(--bodyColor);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.footer .setContent .footerCard .finishFooter {
+  width: 100%;
+  background-color: var(--SecondaryColor);
+  height: 7%;
+  position: absolute;
+  bottom: 0;
+}
+.footer .setContent .footerCard .footerIntro {
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.footer .setContent .footerCard .logoDiv {
+  padding-bottom: 10px;
+}
+.footer .setContent .footerCard .logoDiv .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+}
+.footer .setContent .footerCard .logoDiv .logo .icon {
+  position: relative;
+  font-size: 25px;
+  color: var(--PrimaryColor);
+  bottom: 3px;
+  padding-right: 2px;
+}
+.footer .setContent .footerCard .footerParagraph {
+  font-size: 13px;
+  color: var(--textColor);
+}
+.footer .setContent .footerCard .footerSocial {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.footer .setContent .footerCard .footerSocial .icon {
+  color: var(--blackColor);
+}
+.footer .setContent .footerCard .footerSocial .icon:hover {
+  color: var(--PrimaryColor);
+}
+.footer .setContent .footerCard .footerLinks {
+  flex-basis: 50%;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+.footer .setContent .footerCard .footerLinks .linkGroup .groupTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--blackColor);
+  margin-bottom: 0.5;
+}
+.footer .setContent .footerCard .footerLinks .linkGroup .footerList {
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.footer .setContent .footerCard .footerLinks .linkGroup .footerList .icon {
+  font-size: 15px;
+  color: var(--greyText);
+  margin-bottom: 0.7rem;
+}
+.footer .setContent .footerCard .footerLinks .linkGroup .footerList:hover {
+  color: var(--PrimaryColor);
+  transform: translate(7px);
+}
+.footer .setContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
+  color: var(--SecondaryColor);
+}
+
+@media screen and (max-width: 499px) {
+  .footer .setContent .footerCard .footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 501px) {
+  .footer .setContent .footerCard .footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 841px) {
+  .footer {
+    padding: 5rem 0;
+  }
+  .footer .setContent .footerCard .footerIntro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer .setContent .footerCard .footerIntro .footerParagraph {
+    font-size: 15px;
+    color: var(--textColor);
+  }
+  .footer .setContent .footerCard .footerIntro .footerSocial {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+  .footer .setContent .footerCard .footerIntro .footerSocial .icon {
+    color: var(--textColor);
+    font-size: 25px;
+  }
+  .footer .setContent .footerCard .footerIntro .footerSocial .icon:hover {
+    color: var(--PrimaryColor);
+  }
+  .footer .setContent .footerCard .footerIntro .footerLinks {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=footer.css.map */
