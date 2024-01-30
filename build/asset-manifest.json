@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.10851cb4.css",
+    "main.js": "/static/js/main.c86776ed.js",
+    "static/media/Tokyo.jpg.webp": "/static/media/Tokyo.jpg.d0de10034c5553f2751b.webp",
+    "static/media/video.gif": "/static/media/video.a84b54adc3d7de583142.gif",
+    "static/media/Santorini.webp": "/static/media/Santorini.5f1f69440d0e067e54ee.webp",
+    "static/media/img.jpg": "/static/media/img.7005297faba4b77d3dc9.jpg",
+    "static/media/Reykjavik.jpg": "/static/media/Reykjavik.2e9929df0ad3e7e9b09a.jpg",
+    "static/media/marrakech.jpg": "/static/media/marrakech.6c067ca4d48407981330.jpg",
+    "static/media/Machu_Picchu.jpg": "/static/media/Machu_Picchu.04decba98838c1741882.jpg",
+    "static/media/cape-town.jpg": "/static/media/cape-town.6a551fcbef06ffc5b04d.jpg",
+    "static/media/Grand.jpg": "/static/media/Grand.e45169a06d94a6871a45.jpg",
+    "static/media/barcelona.jpg": "/static/media/barcelona.236f1485d867fad17366.jpg",
+    "static/media/rio-de-janeiro.jpg": "/static/media/rio-de-janeiro.0cb1a21ce6a947b828fd.jpg",
+    "static/media/Lake-Alberta.jpg": "/static/media/Lake-Alberta.6a862f3e65cf41251306.jpg",
+    "static/media/Bangkok.jpg": "/static/media/Bangkok.56d8437719c2b3411395.jpg",
+    "static/media/venice.jpg": "/static/media/venice.632fdeeda12c7f2bbe7b.jpg",
+    "static/media/dubai.jpg": "/static/media/dubai.57644036c619bf87dcd0.jpg",
+    "static/media/Great Barrier Reef.jpg": "/static/media/Great Barrier Reef.3f656188e1232af4fe4e.jpg",
+    "index.html": "/index.html",
+    "main.10851cb4.css.map": "/static/css/main.10851cb4.css.map",
+    "main.c86776ed.js.map": "/static/js/main.c86776ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10851cb4.css",
+    "static/js/main.c86776ed.js"
+  ]
+}
